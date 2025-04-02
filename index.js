@@ -28,7 +28,6 @@ app.get("/api/whoami", function (req, res) {
   const ip = req.socket.remoteAddress;
   const lang = req.headers["accept-language"];
   const sft = req.headers["user-agent"];
-  console.log(req.socket.remoteAddress);
   res.json({
     ipaddress: ip,
     language: lang,
